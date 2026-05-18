@@ -1,0 +1,420 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Universal BJ case study by Chengsheng Zhao, implemented from Figma as a responsive HTML portfolio page."
+    />
+    <title>Universal BJ | Chengsheng Zhao</title>
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <div class="cursor-glow" aria-hidden="true"></div>
+
+    <header class="home-nav">
+      <a class="brand" href="./index.html" aria-label="Chengsheng Zhao homepage">
+        <img src="./assets/nav-mark.svg" alt="" aria-hidden="true" />
+        <span><b>Chengsheng Zhao</b> <em>- UX Designer</em></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="./index.html#work">Work</a>
+        <a href="./about.html">About</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main id="top">
+      <section class="hero">
+        <div class="hero-bg" aria-hidden="true"></div>
+        <div class="wrap hero-grid">
+          <div class="hero-copy reveal">
+            <div class="app-logo" aria-label="Universal BJ logo">
+              <img src="./assets/ubr-logo-shape.svg" alt="" aria-hidden="true" />
+            </div>
+            <h1>Universal BJ</h1>
+            <p class="feature-line"><span>Full Experience</span> Booking</p>
+            <p class="hero-text">
+              A new feature for tourists to easily purchase all their desired
+              experiences in one place.
+            </p>
+            <div class="hero-actions">
+              <a class="button primary magnetic" href="#deck">View Full Deck</a>
+              <a class="button secondary magnetic" href="#overview">About Universal BJ</a>
+            </div>
+          </div>
+
+          <div class="hero-phones reveal" data-delay="120" aria-label="Universal BJ app preview">
+            <div class="phone-crop phone-a">
+              <img src="./assets/iphone16.png" alt="Universal BJ mobile app hero screen" />
+            </div>
+            <div class="phone-crop phone-b">
+              <img src="./assets/iphone16.png" alt="Universal BJ mobile app booking screen" />
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="meta wrap reveal" aria-label="Project information">
+        <div>
+          <span>Team</span>
+          <strong>UBR UX Team</strong>
+        </div>
+        <div>
+          <span>Timeline</span>
+          <strong>May 2024 - Aug 2024</strong>
+        </div>
+        <div>
+          <span>Role</span>
+          <strong>UX Design</strong>
+        </div>
+        <div>
+          <span>Tools</span>
+          <strong>Figma</strong>
+        </div>
+      </section>
+
+      <section id="overview" class="section wrap narrow reveal">
+        <p class="section-kicker">Overview</p>
+        <p class="lead">
+          Universal Beijing Resort is a premier entertainment destination offering
+          immersive rides, dining, and shopping experiences. The official app supports
+          trip planning, ticket purchases, wait times, personalized itineraries, and
+          park navigation for a smoother guest experience.
+        </p>
+      </section>
+
+      <section class="section wrap">
+        <div class="section-head reveal">
+          <p class="section-kicker">Problem Statement</p>
+          <p>
+            The app had two separate shopping entry points with different product
+            selections. Single items and bundles were mixed together, creating cognitive
+            load and making it harder for visitors to decide what to buy.
+          </p>
+        </div>
+
+        <div class="pain-grid">
+          <article class="pain-card reveal" data-delay="0">
+            <span class="emoji" aria-hidden="true">😵‍💫</span>
+            <h3>Painpoint 1</h3>
+            <p>Disconnected product channels confuse users. They do not know where to browse.</p>
+          </article>
+          <article class="pain-card reveal" data-delay="80">
+            <span class="emoji" aria-hidden="true">😓</span>
+            <h3>Painpoint 2</h3>
+            <p>Messy page hierarchy frustrates users. They cannot find what they need.</p>
+          </article>
+          <article class="pain-card reveal" data-delay="160">
+            <span class="emoji" aria-hidden="true">🤔</span>
+            <h3>Painpoint 3</h3>
+            <p>Unclear detail pages overwhelm users. They struggle to make decisions.</p>
+          </article>
+          <article class="pain-card reveal" data-delay="240">
+            <span class="emoji" aria-hidden="true">😤</span>
+            <h3>Painpoint 4</h3>
+            <p>Redundant form filling annoys visitors. It slows them down during purchase.</p>
+          </article>
+        </div>
+      </section>
+
+      <section id="work" class="section wrap">
+        <p class="section-kicker reveal">Impact</p>
+        <div class="impact-panel reveal">
+          <div class="frame-canvas">
+            <div class="impact-copy">
+              <div>
+                <strong>Reduced 15%</strong>
+                <p>Task efficiency improvement through streamlined purchase page structure.</p>
+              </div>
+              <div>
+                <strong>Increased 25%</strong>
+                <p>App engagement after introducing the end-to-end booking feature.</p>
+              </div>
+              <div>
+                <strong>Boosted 12%</strong>
+                <p>Average order value by optimizing the user experience.</p>
+              </div>
+            </div>
+            <div class="device-row impact-devices">
+              <figure class="device tilt-card">
+                <img class="screen" src="./assets/screen-impact-1.png" alt="Universal BJ impact screen" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+              <figure class="device tilt-card">
+                <img class="screen" src="./assets/screen-impact-2.png" alt="Universal BJ purchase flow screen" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section wrap">
+        <p class="section-kicker reveal">Ideation Process</p>
+        <div class="solution-card reveal">
+          <div class="frame-canvas">
+            <div class="solution-copy">
+              <span>Solution1</span>
+              <h2>Shopping Cart, One-Time Checkout</h2>
+              <p>
+                The shopping cart model made bulk purchases easier but didn’t suit tickets
+                and express passes, where prices and availability change quickly. Items could
+                expire, and it slowed decision-making.
+              </p>
+            </div>
+            <div class="device-row solution-devices">
+              <figure class="device">
+                <img class="screen" src="./assets/screen-solution1-a.png" alt="Shopping cart solution screen" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+              <figure class="device raised">
+                <img class="screen" src="./assets/screen-solution1-b.png" alt="Checkout solution screen" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="solution-card reveal">
+          <div class="frame-canvas">
+            <div class="solution-copy">
+              <span>Solution2</span>
+              <h2>Add-on, Personalize Your Order</h2>
+              <p>
+                The add-on model enables users to purchase extras in one transaction,
+                speeding up checkout. However, for items requiring confirmation, frequent
+                page switches can disrupt the flow and cause confusion.
+              </p>
+            </div>
+            <div class="device-row solution-devices">
+              <figure class="device">
+                <img class="screen" src="./assets/screen-solution2-a.png" alt="Add-on solution screen" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+              <figure class="device raised">
+                <img class="screen" src="./assets/screen-solution2-b.png" alt="Personalized order solution screen" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="iterated-card reveal">
+          <div class="frame-canvas">
+            <div class="iterated-heading">
+              <span>Iterated Solution</span>
+              <h2>Progress Indicator</h2>
+              <p>Guiding users with visual steps while reducing page transitions and enhancing immersion.</p>
+            </div>
+            <figure class="device iterated-device">
+              <img class="screen" src="./assets/screen-iterated-main.png" alt="Progress indicator iterated solution screen" />
+              <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+            </figure>
+            <div class="result-card right top">
+              <strong>Boosted 12%</strong>
+              <p>Average Order Value (AOV) by optimizing user experience</p>
+            </div>
+            <div class="result-card right bottom">
+              <strong>Increased 25%</strong>
+              <p>App engagement after introducing the “end-to-end booking” feature</p>
+            </div>
+            <div class="result-card left middle">
+              <strong>Reduced 15%</strong>
+              <p>Task efficiency improvement through streamlined purchase page structure</p>
+            </div>
+            <div class="quote-card left low">
+              “The updated progress bar makes the process much more intuitive and streamlined.
+              It’s easy to see exactly where I am.”
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section wrap">
+        <div class="chapter reveal">
+          <img class="chapter-icon-img" src="./assets/icon-edge.svg" alt="" aria-hidden="true" />
+          <div>
+            <p class="chapter-subtitle">Hold on for a second...</p>
+            <h2>Consider edging user scenarios:</h2>
+          </div>
+        </div>
+
+        <div class="blue-panel reveal">
+          <div class="frame-canvas">
+            <div class="note-stack">
+              <div class="note-card">
+                If the hotel and ticket usage dates selected by the user are inconsistent,
+                should an error be reported?
+              </div>
+              <img src="./assets/edge-person.png" alt="" aria-hidden="true" />
+            </div>
+            <div class="device-row compact">
+              <figure class="device">
+                <img class="screen" src="./assets/screen-iterated-main.png" alt="Edge case date selection screen" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+              <figure class="device raised">
+                <img class="screen" src="./assets/screen-edge-a.png" alt="Edge case confirmation screen" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+            </div>
+          </div>
+        </div>
+
+        <div class="edge-compare reveal">
+          <div class="frame-canvas">
+            <div class="compare-label">Scenario 1: Prompts during the selection process</div>
+            <div class="compare-label">Scenario 2: Prompts during the order confirmation process</div>
+            <div class="device-row compact">
+              <figure class="device small-device">
+                <img class="screen" src="./assets/screen-edge-b.png" alt="Before edge case screen one" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+              <figure class="device small-device">
+                <img class="screen" src="./assets/screen-iterated-main.png" alt="Before edge case screen two" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+            </div>
+            <div class="device-row compact">
+              <figure class="device small-device">
+                <img class="screen" src="./assets/screen-edge-c.png" alt="After edge case screen one" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+              <figure class="device small-device">
+                <img class="screen" src="./assets/screen-edge-a.png" alt="After edge case screen two" />
+                <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+              </figure>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="section wrap">
+        <div class="chapter reveal">
+          <img class="chapter-icon-img" src="./assets/icon-brand.svg" alt="" aria-hidden="true" />
+          <div>
+            <p class="chapter-subtitle">Hold on for a second...</p>
+            <h2>Integrate brand personality into UI design</h2>
+          </div>
+        </div>
+        <p class="chapter-body reveal">
+          As a theme park, our goal was not just to simplify the user journey, but to start
+          building a sense of cinematic immersion right from the app. We carefully embedded
+          the brand’s tone and visual language into key touchpoints, allowing users to feel
+          part of the story even before they entered the park.
+        </p>
+
+        <div class="brand-gallery reveal">
+          <div class="gallery-canvas">
+            <figure class="device">
+              <img class="screen" src="./assets/screen-brand-1.png" alt="Brand UI screen one" />
+              <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+            </figure>
+            <figure class="device">
+              <img class="screen" src="./assets/screen-brand-2.png" alt="Brand UI screen two" />
+              <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+            </figure>
+            <figure class="device">
+              <img class="screen" src="./assets/screen-brand-3.png" alt="Brand UI screen three" />
+              <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+            </figure>
+            <figure class="device">
+              <img class="screen" src="./assets/screen-brand-4.png" alt="Brand UI screen four" />
+              <img class="frame" src="./assets/iphone15.png" alt="" aria-hidden="true" />
+            </figure>
+          </div>
+        </div>
+
+        <div class="emotion-grid">
+          <div class="emotion-canvas">
+            <article class="emotion-card reveal">
+              <span>Onboarding</span>
+              <img src="./assets/emotion-1.png" alt="Onboarding emotional UI design" />
+            </article>
+            <article class="emotion-card reveal" data-delay="90">
+              <span>Prompt</span>
+              <img src="./assets/emotion-2.png" alt="Prompt emotional UI design" />
+            </article>
+            <article class="emotion-card reveal" data-delay="180">
+              <span>Popup</span>
+              <img src="./assets/emotion-3.png" alt="Popup emotional UI design" />
+            </article>
+          </div>
+        </div>
+      </section>
+
+      <section id="about" class="section wrap">
+        <div class="chapter reveal">
+          <img class="chapter-icon-img" src="./assets/icon-takeaways.svg" alt="" aria-hidden="true" />
+          <h2>Takeaways</h2>
+        </div>
+        <div class="takeaway-grid">
+          <ul class="takeaways reveal">
+            <li>
+              Insights are more important than feedback. The value of user interviews is
+              understanding the essence of the problem, not simply executing every request.
+            </li>
+            <li>
+              Consider extreme situations as well as the ideal path. Edge scenarios reduce
+              frustration when the real product environment becomes messy.
+            </li>
+            <li>
+              Design is a continuous process of trade-offs and iteration. Real-world
+              constraints require the most suitable solution for the current scenario.
+            </li>
+          </ul>
+          <div class="polaroids reveal" data-delay="120" aria-label="Research moments collage">
+            <div class="polaroid-canvas">
+              <img src="./assets/takeaway-photo-1.png" alt="Universal Beijing research photo" />
+              <img src="./assets/takeaway-photo-2.png" alt="Field research photo" />
+              <span class="polaroid-crop p5"><img src="./assets/takeaway-polaroid-5.png" alt="Research moment photo" /></span>
+              <span class="polaroid-crop p12"><img src="./assets/takeaway-polaroid-12.png" alt="Polaroid field photo" /></span>
+              <span class="polaroid-crop p15"><img src="./assets/takeaway-polaroid-15.png" alt="Theme park research polaroid" /></span>
+              <span class="polaroid-crop p31"><img src="./assets/takeaway-polaroid-31.png" alt="Team field research polaroid" /></span>
+              <span class="polaroid-crop p3"><img src="./assets/takeaway-polaroid-3.png" alt="Workshop polaroid" /></span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section id="deck" class="section wrap deck-section reveal">
+        <div class="deck-copy">
+          <div class="chapter compact-title">
+            <img class="chapter-icon-img" src="./assets/icon-deck.svg" alt="" aria-hidden="true" />
+            <h2>Full Deck</h2>
+          </div>
+          <p>
+            If you are curious about the journey behind the final design, the full slide
+            deck has the twists, turns, and lightbulb moments.
+          </p>
+          <a class="button primary magnetic" href="#top">View Full Deck</a>
+        </div>
+        <img class="deck-preview tilt-card" src="./assets/deck-preview.png" alt="Universal BJ full deck preview" />
+      </section>
+
+      <section class="section wrap other-section">
+        <p class="section-kicker reveal">Other works</p>
+        <div class="other-grid">
+          <article class="work-card reveal tilt-card">
+            <img src="./assets/other-ubr.png" alt="Universal BJ project thumbnail" />
+            <h3>Universal BJ</h3>
+            <p>Designed a new feature for tourists to purchase desired experiences in one place.</p>
+          </article>
+          <a class="work-card reveal tilt-card" data-delay="120" href="./meispace.html" aria-label="Open MeiSpace case study">
+            <img src="./assets/other-meetpals.png" alt="Meetpals project thumbnail" />
+            <h3>Meetpals</h3>
+            <p>A social app helping international students build career connections with less pressure.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer id="contact" class="site-footer">
+      <p>Powered by a lot of coffee ☕️ and true crime podcasts 🎙️</p>
+    </footer>
+
+    <script src="./script.js"></script>
+  </body>
+</html>

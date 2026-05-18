@@ -1,0 +1,316 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="MeiSpace case study by Chengsheng Zhao, recreated from Figma as a responsive HTML portfolio page."
+    />
+    <title>MeiSpace | Chengsheng Zhao</title>
+    <link rel="stylesheet" href="./meispace.css" />
+  </head>
+  <body>
+    <header class="home-nav">
+      <a class="brand" href="./index.html" aria-label="Chengsheng Zhao homepage">
+        <img src="./assets/nav-mark.svg" alt="" aria-hidden="true" />
+        <span><b>Chengsheng Zhao</b> <em>- UX Designer</em></span>
+      </a>
+      <nav aria-label="Primary navigation">
+        <a href="./index.html#work">Work</a>
+        <a href="./about.html">About</a>
+        <a href="./index.html#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="ms-hero">
+        <div class="ms-wrap hero-wrap">
+          <div class="hero-copy">
+            <div class="app-icon">
+              <span class="app-icon-crop">
+                <img src="./assets/meetpals/logo.png" alt="" aria-hidden="true" />
+              </span>
+            </div>
+            <h1>MeiSpace</h1>
+            <p>A complete e-commerce design solution that empowers everyone to effortlessly create e-commerce assets.</p>
+            <a class="pill-button" href="#overview">About MeiSpace</a>
+          </div>
+          <img class="hero-art" src="./assets/meetpals/hero.png" alt="MeiSpace mobile product screens" />
+        </div>
+      </section>
+
+      <section class="meta ms-wrap" aria-label="Project information">
+        <div>
+          <span>Timeline</span>
+          <strong>Oct 2024 - Dec 2024</strong>
+        </div>
+        <div>
+          <span>Tools</span>
+          <strong>Figma</strong>
+        </div>
+        <div>
+          <span>Role</span>
+          <strong>Passion UX Project</strong>
+        </div>
+      </section>
+
+      <section id="overview" class="section ms-wrap overview-grid">
+        <h2 class="section-kicker">Overview</h2>
+        <div class="chart-card">
+          <p class="chart-title">Foreign students taking post-graduction jobs in US</p>
+          <div class="legend"><span></span>All majors <b></b>STEM majors</div>
+          <div class="bars" aria-label="Bar chart">
+            <i style="--h: 36%"><em>11%</em></i>
+            <i style="--h: 52%"><em>16%</em></i>
+            <i style="--h: 72%"><em>22%</em></i>
+            <i style="--h: 82%"><em>25%</em></i>
+          </div>
+          <p class="chart-source">Source: Researcher's calculations using data from IPEDS and other source</p>
+        </div>
+        <p class="overview-copy">
+          In e-commerce operations, the quality of visual content is crucial for product conversion rates and brand image.
+          Operators often need to quickly produce high-quality product images, but traditional methods are often time-consuming
+          and labor-intensive. To address this, I designed a mobile AI-assisted rendering tool for e-commerce operators that
+          helps users quickly generate high-quality rendered images, enhancing their work efficiency.
+        </p>
+      </section>
+
+      <section class="section ms-wrap content-analysis">
+        <div class="section-title">
+          <span>Content Analysis</span>
+          <h2>Content Analysis</h2>
+        </div>
+        <div class="analysis-grid">
+          <div class="ad-collage">
+            <img src="./assets/meetpals/content-1.png" alt="Commerce content example one" />
+            <img src="./assets/meetpals/content-3.png" alt="Commerce content example two" />
+            <img src="./assets/meetpals/content-2.png" alt="Commerce content example three" />
+            <img src="./assets/meetpals/content-4.png" alt="Commerce content example four" />
+          </div>
+          <div class="layer-diagram">
+            <div class="layer-stack">
+              <img class="layer top" src="./assets/meetpals/layer-top.png" alt="" />
+              <img class="layer mid" src="./assets/meetpals/layer-2.png" alt="" />
+              <img class="layer base" src="./assets/meetpals/layer-1.png" alt="" />
+            </div>
+            <div class="layer-labels">
+              <p>Template Layer</p>
+              <p>Product Subject</p>
+              <p>Background</p>
+            </div>
+            <p class="note-box">
+              The logic of creating product images is roughly the same and can be divided into three parts: product subject,
+              background, and template. However, different platforms have different requirements for image dimensions; for
+              example, Taobao's main image size is 1:1, while Xiaohongshu uses a mix of square and rectangular shapes.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section problem">
+        <div class="ms-wrap">
+          <h2 class="section-kicker">Problem Statement</h2>
+          <div class="problem-grid">
+            <article><b>😵‍💫</b><h3>Painpoint 1</h3><p>Imbalance between basic functions and advanced functions.</p></article>
+            <article><b>😓</b><h3>Painpoint 2</h3><p>High input threshold, users lack examples or guidance.</p></article>
+            <article><b>🤔</b><h3>Painpoint 3</h3><p>Users interrupt the creative process due to long wait times.</p></article>
+            <article><b>🤔</b><h3>Painpoint 3</h3><p>Low expandability of generated templates.</p></article>
+          </div>
+          <div class="statement-card">
+            <p>Challenge</p>
+            <strong>How might we create an intuitive and powerful AI-driven rendering tool for e-commerce operators that balances ease of use with advanced creative capabilities?</strong>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ms-wrap solution">
+        <div class="solution-copy">
+          <div class="section-title">
+            <span>Final Solutions</span>
+            <h2>Clickable Prototype</h2>
+          </div>
+          <p>The tool fails to dynamically match the user's actual skill level and current demand complexity, leading to two typical problems:</p>
+        </div>
+        <figure class="phone-mock">
+          <img class="screen" src="./assets/meetpals/prototype-screen.png" alt="MeiSpace clickable prototype screen" />
+          <img class="frame" src="./assets/meetpals/iphone.png" alt="" aria-hidden="true" />
+        </figure>
+      </section>
+
+      <section class="section ms-wrap pain-section">
+        <div class="section-title wide">
+          <span>Pain Points</span>
+          <h2>Pain Point 1: Imbalance between basic functions and advanced functions.</h2>
+        </div>
+        <p class="body-copy">The tool fails to dynamically match the user's actual skill level and current demand complexity, leading to two typical problems:</p>
+        <div class="two-card">
+          <article class="pain-card">
+            <p>"Over-simplification": When only basic functions are provided, users churn due to unmet deeper needs.</p>
+            <img class="phone-shot" src="./assets/meetpals/pain1-screen.png" alt="Basic function screen" />
+            <img class="sticker sticker-a" src="./assets/meetpals/pain1-person.png" alt="" aria-hidden="true" />
+          </article>
+          <article class="pain-card">
+            <p>"Over-exposure": When advanced functions are displayed by default, users abandon usage due to cognitive overload.</p>
+            <img class="wide-shot" src="./assets/meetpals/pain1-software.png" alt="Advanced software interface" />
+            <img class="sticker sticker-b" src="./assets/meetpals/pain1-facepalm.png" alt="" aria-hidden="true" />
+          </article>
+        </div>
+      </section>
+
+      <section class="section ms-wrap strategy">
+        <div class="section-title">
+          <span>Design Strategy</span>
+          <h2>Design Strategy</h2>
+        </div>
+        <p class="body-copy">Using the recommendation feature alone also yields good generation results; however, using advanced features provides greater freedom.</p>
+        <div class="mode-block">
+          <span class="scenario">Scenario 1: Basic Mode</span>
+          <div class="screen-row basic">
+            <img src="./assets/meetpals/strategy-en.png" alt="Basic mode first screen" />
+            <img src="./assets/meetpals/strategy-en20.png" alt="Basic mode recommended screen" />
+            <img src="./assets/meetpals/strategy-en2.png" alt="Basic mode result screen" />
+          </div>
+        </div>
+        <div class="mode-block">
+          <span class="scenario">Scenario 2: Custom Mode</span>
+          <div class="screen-row custom">
+            <img src="./assets/meetpals/strategy-en.png" alt="Custom mode first screen" />
+            <img src="./assets/meetpals/strategy-en1.png" alt="Custom mode selection screen" />
+            <img src="./assets/meetpals/strategy-en11.png" alt="Custom mode generation screen" />
+            <img src="./assets/meetpals/strategy-en3.png" alt="Custom mode record screen" />
+            <img src="./assets/meetpals/strategy-en2.png" alt="Custom mode final screen" />
+          </div>
+        </div>
+      </section>
+
+      <section class="section ms-wrap pain-section">
+        <div class="section-title wide">
+          <span>Pain Points</span>
+          <h2>Pain Point 2: High input threshold, users lack examples or guidance.</h2>
+        </div>
+        <p class="body-copy">To write high-quality descriptive words, one needs to approach from multiple angles, such as style, color, image details, light and shadow, composition ratio, and even camera settings, which involves a lot of professional terminology, making it very difficult for ordinary users. At the same time, current competing products in the market have relatively singular creation guidance, and users generally find it difficult to get started and generate high-quality descriptive words.</p>
+        <div class="two-card">
+          <article class="pain-card input-card">
+            <p>Users are not designers and cannot write high-quality descriptive words.</p>
+            <img class="mug" src="./assets/meetpals/pain2-mug.png" alt="Rendered mug" />
+            <small>Subject Word: Mug (JPMorgan Chase)<br />Style Description: Minimalist modern style, exquisite realistic style, commercial texture, CG-level rendering<br />Tone Description: Dark gray + metallic silver, low saturation, warm tone light feeling<br />Detail Description: Frosted stainless steel texture, cup body with JP Morgan Chase lettering, built-in silver metal spoon, geometric handle, smooth cup body curvature, edges made of brushed metal material, delicate reflection, cup body free of fingerprints and water stains, overall texture is high-end business<br />Background Description: Black and gold marble tabletop (natural texture with white-gray veins), background blurred, classical indoor environment, gold-framed paintings and candlesticks blurred and visible, luxurious and elegant<br />Light and Shadow Effects: Warm ambient light, soft light, natural highlights and shadows interspersed, forming high-end reflections<br />Image Composition: Rule of thirds composition, cup centered slightly to the right, close-up shot, focus highlights the subject, background blurred<br />Image Quality Description: Ultra-high definition, realistic rendering texture, 8K level clarity, material details visible, overall visual richness.</small>
+          </article>
+          <article class="pain-card input-card">
+            <p>"Over-exposure": When advanced functions are displayed by default, users abandon usage due to cognitive overload.</p>
+            <img class="phone-shot" src="./assets/meetpals/pain2-screen.png" alt="Competing product creation page" />
+            <small>The creation pages of competing products are mainly divided into modules for inputting descriptive words, selecting styles, dimensions, etc. However, there is still a certain threshold, such as similarity, which cannot be distinguished without guidance on what the two extremes represent.</small>
+          </article>
+        </div>
+      </section>
+
+      <section class="section ms-wrap strategy detail-strategy">
+        <div class="section-title">
+          <span>Design Strategy</span>
+          <h2>Design Strategy</h2>
+        </div>
+        <div class="detail-grid">
+          <div class="detail-left">
+            <span class="scenario">Scenario 1: Basic Mode</span>
+            <img src="./assets/meetpals/detail-en1.png" alt="Basic mode background recommendation" />
+            <p>Prioritize generating 2 recommended backgrounds based on the subject, providing semi-automated guidance to solve user input confusion.</p>
+            <p>Use image examples instead of text, and quickly splice images in the preview area to manage user expectations for raw images, enhancing motor appeal and playability.</p>
+          </div>
+          <div class="detail-right">
+            <span class="scenario">Scenario 2: Custom Mode</span>
+            <img class="phone" src="./assets/meetpals/detail-en11.png" alt="Custom mode prompt screen" />
+            <img class="panel panel-a" src="./assets/meetpals/detail-panel1.png" alt="Parameter settings panel" />
+            <img class="panel panel-b" src="./assets/meetpals/detail-panel2.png" alt="AI refinement panel" />
+            <p>Simplify parameter selection, what you see is what you get.</p>
+            <p>AI Refinement, making images understand you better.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ms-wrap pain-section wait-section">
+        <div class="section-title wide">
+          <span>Pain Points</span>
+          <h2>Pain Point 3: Users interrupt the creative process due to long rendering wait times.</h2>
+        </div>
+        <p class="body-copy">Due to the high-quality rendered images generated by mobile AI taking a long time (usually over 10 seconds), users are prone to experiencing **"uncertainty of progress" and "doubt about the value of time" during the waiting process, leading to:</p>
+        <div class="wait-cards">
+          <article><h3>#1 Operation Interruption</h3><p>Abandoning the current task or switching to other applications.</p></article>
+          <article><h3>#2 Accumulation of Negative Emotions</h3><p>Developing distrust in tool efficiency, reducing willingness to reuse.</p></article>
+          <article><h3>#3 Decreased Willingness to Experiment</h3><p>Reducing the number of parameter adjustments due to fear of repeated waiting, affecting the final effect.</p></article>
+        </div>
+        <div class="wait-note">
+          <img src="./assets/meetpals/wait-person.png" alt="" aria-hidden="true" />
+          <p>After testing 6 mainstream e-commerce AI image generation tools and general AI raw image software, I found that their average generation wait time is 12.86 seconds.</p>
+        </div>
+      </section>
+
+      <section class="section ms-wrap strategy final-strategy">
+        <div class="section-title">
+          <span>Design Strategy</span>
+          <h2>Design Strategy</h2>
+        </div>
+        <div class="final-grid">
+          <div>
+            <span class="scenario">Scenario 1: Remove the background</span>
+            <img src="./assets/meetpals/final-en17.png" alt="Remove background screen" />
+            <p>Micro-interaction effects, emotionally transferring user anxiety.</p>
+          </div>
+          <div>
+            <span class="scenario">Scenario 2: When generating the final effect image.</span>
+            <img src="./assets/meetpals/final-en4.png" alt="Generate record screen" />
+            <img src="./assets/meetpals/final-car.png" alt="Creation car floating window" />
+            <p>Introduce a "Creation Car" floating window, allowing users to continuously add tasks and process them in the background, alleviating waiting anxiety.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="section ms-wrap pain-section template-section">
+        <div class="section-title wide">
+          <span>Pain Points</span>
+          <h2>*Pain Point 4: Low expandability of generated templates.</h2>
+        </div>
+        <p class="body-copy">Due to the high-quality rendered images generated by mobile AI taking a long time (usually over 10 seconds), users are prone to experiencing **"uncertainty of progress" and "doubt about the value of time" during the waiting process, leading to:</p>
+        <div class="two-card template-cards">
+          <article class="pain-card template-card">
+            <p>Users are not designers and cannot write high-quality descriptive words.</p>
+            <div class="template-map template-map-basic">
+              <img class="template-main" src="./assets/meetpals/template-ai-main.png" alt="Original generated template" />
+              <img class="template-variant-a" src="./assets/meetpals/template-ai-variant-a.png" alt="Template variation one" />
+              <img class="template-variant-b" src="./assets/meetpals/template-ai-variant-b.png" alt="Template variation two" />
+              <img class="template-arrow arrow-a" src="./assets/meetpals/template-arrow-small.svg" alt="" aria-hidden="true" />
+              <img class="template-arrow arrow-b" src="./assets/meetpals/template-arrow-small.svg" alt="" aria-hidden="true" />
+            </div>
+          </article>
+          <article class="pain-card template-card">
+            <p>"Over-exposure": When advanced functions are displayed by default, users abandon usage due to cognitive overload.</p>
+            <div class="template-map expanded">
+              <img class="template-main" src="./assets/meetpals/template-ai-main.png" alt="Original generated template" />
+              <img class="template-large" src="./assets/meetpals/template-ai-main.png" alt="Expanded template variation" />
+              <img class="template-small" src="./assets/meetpals/template-ai-main.png" alt="Small template variation" />
+              <img class="template-arrow arrow-a" src="./assets/meetpals/template-arrow-large-a.svg" alt="" aria-hidden="true" />
+              <img class="template-arrow arrow-b" src="./assets/meetpals/template-arrow-large-b.svg" alt="" aria-hidden="true" />
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <section class="section ms-wrap other-section">
+        <h2 class="section-kicker">Other works</h2>
+        <div class="other-grid">
+          <a class="work-card" href="./index.html">
+            <img src="./assets/other-ubr.png" alt="Universal BJ project thumbnail" />
+            <h3>Universal BJ</h3>
+            <p>Designed a new feature for tourists to purchase desired experiences in one place.</p>
+          </a>
+          <a class="work-card" href="./meispace.html">
+            <img src="./assets/other-meetpals.png" alt="Meetpals project thumbnail" />
+            <h3>Meetpals</h3>
+            <p>A social app that helps international students build career connections and feel at home by reducing networking pressure.</p>
+          </a>
+        </div>
+      </section>
+    </main>
+
+    <footer>Powered by a lot of coffee ☕️ and true crime podcasts 🎙️</footer>
+  </body>
+</html>
