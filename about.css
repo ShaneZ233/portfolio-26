@@ -71,9 +71,26 @@ a {
 
 .home-nav nav {
   gap: 38.667px;
-  color: var(--ink);
+  color: #666666;
   font-size: 16px;
   font-weight: 600;
+}
+
+.home-nav nav a {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-icon {
+  display: none;
+  width: 24px;
+  height: 24px;
+  fill: none;
+  stroke: currentColor;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  stroke-width: 2;
 }
 
 main {
@@ -419,17 +436,42 @@ footer {
 @media (max-width: 760px) {
   .home-nav {
     height: auto;
-    padding: 18px 24px;
+    padding: 12px 24px;
+  }
+
+  .brand {
+    gap: 0;
   }
 
   .brand span {
-    max-width: 230px;
-    overflow: hidden;
-    text-overflow: ellipsis;
+    display: none;
   }
 
   .home-nav nav {
+    display: flex;
+    gap: 8px;
+  }
+
+  .home-nav nav a {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    color: #666666;
+    transition: background-color 180ms ease, color 180ms ease;
+  }
+
+  .home-nav nav a:hover,
+  .home-nav nav a:focus-visible {
+    background: rgba(0, 0, 0, 0.06);
+    color: var(--ink);
+  }
+
+  .nav-label {
     display: none;
+  }
+
+  .nav-icon {
+    display: block;
   }
 
   main {
