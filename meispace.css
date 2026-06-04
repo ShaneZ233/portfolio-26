@@ -102,6 +102,32 @@ a {
   stroke-width: 2;
 }
 
+.project-back {
+  position: fixed;
+  top: 86px;
+  left: 24px;
+  z-index: 18;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-height: 38px;
+  padding: 8px 14px;
+  border: 1px solid rgba(136, 79, 221, 0.2);
+  border-radius: 999px;
+  color: #6541a3;
+  background: rgba(243, 239, 255, 0.88);
+  box-shadow: 0 10px 28px rgba(136, 79, 221, 0.12);
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 1;
+  backdrop-filter: blur(12px);
+}
+
+.project-back span {
+  font-size: 16px;
+  line-height: 1;
+}
+
 .ms-hero {
   min-height: 760px;
   overflow: hidden;
@@ -1298,6 +1324,11 @@ footer {
   .home-nav {
     height: auto;
     padding: 12px 24px;
+  }
+
+  .project-back {
+    top: 76px;
+    left: 16px;
   }
 
   .brand {
